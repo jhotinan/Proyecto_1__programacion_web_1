@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,7 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos_index.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -48,7 +49,7 @@
     <main class="bg-secondary">
         <br>
         <br>
-    <div class="row justify-content-center">
+        <div class="row justify-content-center">
             <div class="col-4">
                 <form action="factura.php" method="POST">
                     <h3 class="text-center mb-4">Factura de su compra</h3>
@@ -62,57 +63,81 @@
                     </div>
                     <div class="row mb-3">
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="Producto 2">
+                            <input type="text" class="form-control" placeholder="Producto 2" name="producto2">
                         </div>
                         <div class="col">
-                            <input type="number" class="form-control" placeholder="Precio($)">
+                            <input type="number" class="form-control" placeholder="Precio($)" name="precio2">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="Producto 3">
+                            <input type="text" class="form-control" placeholder="Producto 3" name="producto3">
                         </div>
                         <div class="col">
-                            <input type="number" class="form-control" placeholder="Precio($)">
+                            <input type="number" class="form-control" placeholder="Precio($)" name="precio3">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="Producto 4">
+                            <input type="text" class="form-control" placeholder="Producto 4" name="producto4">
                         </div>
                         <div class="col">
-                            <input type="number" class="form-control" placeholder="Precio($)">
+                            <input type="number" class="form-control" placeholder="Precio($)" name="precio4">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="Producto 5">
+                            <input type="text" class="form-control" placeholder="Producto 5" name="producto5">
                         </div>
                         <div class="col">
-                            <input type="number" class="form-control" placeholder="Precio($)">
+                            <input type="number" class="form-control" placeholder="Precio($)" name="precio5">
                         </div>
                     </div>
-                    
+
                     <button type="submit" class="btn btn-primary btn-block" name="botonCalcular">Calcular</button>
                 </form>
 
                 <?php
                     if(isset($_POST["botonCalcular"])):
                 ?>
+                <br>
                 <h6>
-                <br>
-                <br>
-                    <?php 
-                        $precio1=$_POST["precio1"];
-                        $producto1=$_POST["producto1"];
+                    <?php
+                    $precio1=$_POST["precio1"];
+                    $producto1=$_POST["producto1"]; 
 
-                        echo("El producto 1 es: ".$producto1."-----($) ".$precio1); 
+                    $precio2=$_POST["precio2"];
+                    $producto2=$_POST["producto2"];
+
+                    $precio3=$_POST["precio3"];
+                    $producto3=$_POST["producto3"];
+
+                    $precio4=$_POST["precio4"];
+                    $producto4=$_POST["producto4"];
+
+                    $precio5=$_POST["precio5"];
+                    $producto5=$_POST["producto5"];
                     
-                    ?>
+                    $total=$precio1+$precio2+$precio3+$precio4+$precio5;
+
+                    echo("El producto 1 es: ".$producto1."-----($) ".$precio1);
+                    echo("<br>");
+                    echo("El producto 2 es: ".$producto2."-----($) ".$precio2); 
+                    echo("<br>");
+                    echo("El producto 3 es: ".$producto3."-----($) ".$precio3); 
+                    echo("<br>");
+                    echo("El producto 4 es: ".$producto4."-----($) ".$precio4);
+                    echo("<br>");
+                    echo("El producto 5 es: ".$producto5."-----($) ".$precio5); 
+                    echo("<br>");
+                    echo("El total de la compra es: " .$total); 
+                    
+
+                ?>
                 </h6>
                 <?php
-                    endif
-                ?>
+                endif
+            ?>
             </div>
         </div>
     </main>
