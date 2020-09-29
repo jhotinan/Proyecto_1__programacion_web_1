@@ -62,7 +62,7 @@
                   <h4></h4>
                 </a>
               </div>
-              <img src="img/Producto_1.jpeg" class="img-fluid" alt="Producto_1">
+              <a title="producto_1" href="producto1.php"><img src="img/Producto_1.jpeg" class="img-fluid" alt="producto1"></a>
             </div>
           </div>
 
@@ -73,7 +73,7 @@
                   <h4></h4>
                 </a>
               </div>
-              <img src="img/Producto_2.jpeg" class="img-fluid" alt="producto_2">
+              <a title="producto_2" href="producto2.php"><img src="img/Producto_2.jpeg" class="img-fluid" alt="producto2"></a>
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@
                   <h4></h4>
                 </a>
               </div>
-              <img src="img/Producto_3.jpeg" class="img-fluid" alt="producto_3">
+              <a title="producto_3" href="producto3.php"><img src="img/Producto_3.jpeg" class="img-fluid" alt="producto3"></a>
             </div>
           </div>
 
@@ -99,7 +99,7 @@
                   <h4></h4>
                 </a>
               </div>
-              <img src="img/Producto_4.jpeg" class="img-fluid" alt="producto_4">
+              <a title="producto_4" href="producto4.php"><img src="img/Producto_4.jpeg" class="img-fluid" alt="producto4"></a>
             </div>
           </div>
 
@@ -110,7 +110,7 @@
                   <h4></h4>
                 </a>
               </div>
-              <img src="img/Producto_5.jpeg" class="img-fluid" alt="producto_5">
+              <a title="producto_5" href="producto5.php"><img src="img/Producto_5.jpeg" class="img-fluid" alt="producto5"></a>
             </div>
           </div>
 
